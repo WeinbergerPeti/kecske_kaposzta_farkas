@@ -1,0 +1,64 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+main
+{
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "asb a a asj"
+                         "f f f f";
+
+    border: 1px solid black;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+header,aside,article, footer
+{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+header
+{
+    grid-area: h;
+}
+
+article
+{
+    grid-area: a;
+}
+
+aside #bal
+{
+    grid-area: asb;
+}
+
+aside img
+{
+    width: 100px;
+}
+
+aside #jobb
+{
+    grid-area: asj;
+}
+
+footer
+{
+    grid-area: f;
+    text-align: center;
+    font-size: 20px;
+}
+
+.kiemel
+{
+    border: 2px solid red;
+    cursor: grab;
+}

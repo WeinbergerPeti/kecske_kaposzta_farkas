@@ -37,6 +37,8 @@ function init()
         $All("#bal img")[i].addEventListener("mouseover", egerRavisz);
         $All("#bal img")[i].addEventListener("mouseout", egerLevesz);
     }
+
+    csonakBeillesztes();
 }
 
 function egerRavisz()
@@ -57,8 +59,19 @@ function kepMentes()
     console.log(kepekSrc);
 }
 
-
 function nevAtiras()
 {
-    $("footer p").innerHTML="Weinberger Péter";
+    var foo=$("footer p");
+    foo.innerHTML="Weinberger Péter";
+    foo.style.fontSize="20px";
+    foo.style.textAlign="center";
+    foo.style.backgroundColor="lightblue";
+}
+
+function csonakBeillesztes()
+{
+    var txt="<img>";
+    ID("csonak").innerHTML=txt;
+    $("#csonak img").src="kepek/csonak.png";
+    $("#csonak img").alt="csónak";
 }
